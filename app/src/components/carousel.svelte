@@ -1,19 +1,21 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+
 	const all_items = [
 		[
-			{ title: 'Among Us', img: 'images/amongus.png' },
-			{ title: 'Round', img: 'images/round.png' },
-			{ title: 'Square', img: 'images/square.png' }
+			{ title: 'Among Us', img: base + '/images/amongus.webp' },
+			{ title: 'Round', img: base + '/images/round.webp' },
+			{ title: 'Square', img: base + '/images/square.webp' }
 		],
 		[
-			{ title: 'Round', img: 'images/round.png' },
-			{ title: 'Square', img: 'images/square.png' },
-			{ title: 'Among Us', img: 'images/amongus.png' }
+			{ title: 'Round', img: base + '/images/round.webp' },
+			{ title: 'Square', img: base + '/images/square.webp' },
+			{ title: 'Among Us', img: base + '/images/amongus.webp' }
 		],
 		[
-			{ title: 'Square', img: 'images/square.png' },
-			{ title: 'Among Us', img: 'images/amongus.png' },
-			{ title: 'Round', img: 'images/round.png' }
+			{ title: 'Square', img: base + '/images/square.webp' },
+			{ title: 'Among Us', img: base + '/images/amongus.webp' },
+			{ title: 'Round', img: base + '/images/round.webp' }
 		]
 	];
 	import Slide from './slide.svelte';

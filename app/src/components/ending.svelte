@@ -1,3 +1,7 @@
+<script>
+	import { base } from '$app/paths';
+</script>
+
 <div class="w-full bg-transparent h-full py-10 flex flex-col justify-end">
 	<div id="ending" class="flex flex-col justify-between md:flex-row flex-nowrap my-2">
 		<div class="flex flex-col justify-center row-start-1 row-span-1 md:max-w-2xl md:pl-8">
@@ -14,7 +18,7 @@
 		</div>
 
 		<figure class="p-16 sm:px-28 md:p-12 m-auto max-w-full md:max-w-lg round">
-			<img class="my-auto rounded " src="images/photo.jpg" alt="" />
+			<img class="my-auto rounded " src="{base}/images/photo.webp" alt="" />
 		</figure>
 	</div>
 </div>

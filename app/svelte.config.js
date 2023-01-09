@@ -1,6 +1,7 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
-import preprocess from 'svelte-preprocess';
+
+const dev = process.argv.includes('dev');
 
 /**
  * This will add autocompletion if you're working with SvelteKit
@@ -18,13 +19,14 @@ const config = {
 			{
 				pages: 'build',
 				assets: 'build',
-				fallback: null,
-				strict: false
+				fallback: 'index.html',
+				strict: true
 			}
-		)
-	},
-	paths: {
-		base: process.env.NODE_ENV === 'production' ? '/PopIt' : ''
+		),
+		paths: {
+			base: dev ? '' : '/PopIt'
+		},
+		appDir: 'internal'
 	}
 };
 

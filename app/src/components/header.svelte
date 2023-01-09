@@ -54,14 +54,14 @@
 </script>
 
 <header
-	class="flex flex-row justify-between m-0 px-8 py-4 align-baseline uppercase font-semibold bg-primary sticky top-0 z-10"
+	class="flex flex-row justify-between m-0 px-8 py-4 align-middle uppercase font-semibold bg-primary sticky top-0 z-10 text-lg "
 >
-	<div class="logo h-full my-auto align-middle">
+	<div class="logo h-full my-auto ">
 		<a
 			href="{base}/."
 			id="logo"
 			rel="home"
-			class="align-middle transition-all hover:drop-shadow hover:inline-block hover:-translate-x-[1px] hover:-translate-y-[1px]"
+			class=" transition-all hover:drop-shadow hover:inline-block hover:-translate-x-[1px] hover:-translate-y-[1px] "
 			>pop it.com</a
 		>
 	</div>

@@ -45,6 +45,6 @@
 		transform: translateZ(-160px) scale(1.8);
 	}
 	.parallax__layer--back2 {
-		transform: translateZ(-180px) scale(2.4) translateY(-10px);
+		transform: translateZ(-180px) scaleX(2.4) scaleY(1) translateY(-10px);
 	}
 </style>

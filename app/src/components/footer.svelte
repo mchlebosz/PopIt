@@ -1,9 +1,10 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	const subpages = [
-		{ id: 'home', name: 'pop it!', href: '.' },
-		{ id: 'about', name: 'about it!', href: 'about' },
-		{ id: 'shop', name: 'shop it!', href: 'shop' },
-		{ id: 'contact', name: 'contact it!', href: 'contact' }
+		{ id: 'home', name: 'pop it!', href: { base } + '/' + '.' },
+		{ id: 'about', name: 'about it!', href: { base } + '/' + 'about' },
+		{ id: 'shop', name: 'shop it!', href: { base } + '/' + 'shop' },
+		{ id: 'contact', name: 'contact it!', href: { base } + '/' + 'contact' }
 	];
 
 	const colors = [

@@ -19,10 +19,12 @@
 		});
 	});
 
+	import { base } from '$app/paths';
+
 	const subpages = [
-		{ id: 'about', name: 'about it!', href: 'about' },
-		{ id: 'shop', name: 'shop it!', href: 'shop' },
-		{ id: 'contact', name: 'contact it!', href: 'contact' }
+		{ id: 'about', name: 'about it!', href: { base } + '/about' },
+		{ id: 'shop', name: 'shop it!', href: { base } + '/shop' },
+		{ id: 'contact', name: 'contact it!', href: { base } + '/contact' }
 	];
 
 	const colors = [
@@ -56,8 +58,8 @@
 >
 	<div class="logo h-full my-auto align-middle">
 		<a
+			href="{base}/."
 			id="logo"
-			href="."
 			rel="home"
 			class="align-middle transition-all hover:drop-shadow hover:inline-block hover:-translate-x-[1px] hover:-translate-y-[1px]"
 			>pop it.com</a

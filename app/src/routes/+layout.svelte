@@ -1,4 +1,6 @@
 <script>
+	export const prerender = true;
+
 	import Header from '../components/header.svelte';
 	import Footer from '../components/footer.svelte';
 </script>
@@ -11,7 +13,7 @@
 	</div>
 </div>
 
-<style lang="scss">
+<style lang="postcss">
 	.parallax {
 		perspective: 100px;
 		height: 100vh;
@@ -22,7 +24,6 @@
 		position: relative;
 		height: auto;
 		transform-style: preserve-3d;
-		//transform: translate3d(400px, 0, -500px) rotateY(20deg);
 	}
 	#footer {
 		z-index: 10;

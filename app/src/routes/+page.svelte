@@ -1,4 +1,5 @@
 <script lang="ts">
+	export const prerender = true;
 	import '../app.css';
 	import Hero from '../components/hero.svelte';
 	import Middle from '../components/middle.svelte';
@@ -65,7 +66,6 @@
 		height: auto;
 		height: 100vh;
 		transform-style: preserve-3d;
-		//transform: translate3d(400px, 0, -500px) rotateY(20deg);
 	}
 	#group0 {
 		z-index: 3;
@@ -76,8 +76,6 @@
 	#group2 {
 		z-index: 2;
 		height: 110vh;
-
-		//transform: translateZ(100px) scale(0.3);
 	}
 	#group3 {
 		z-index: 9;

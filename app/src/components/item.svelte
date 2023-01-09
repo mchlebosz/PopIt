@@ -1,5 +1,6 @@
 <script lang="ts">
 	export let item: { title: string; img: string };
+	import { base } from '$app/paths';
 
 	import { onMount } from 'svelte';
 
@@ -34,6 +35,6 @@
 	<button
 		class="bg-primary p-1 px-3 rounded-lg uppercase drop-shadow-lg font-semibold transition-all hover:drop-shadow  hover:-translate-x-[1px] hover:-translate-y-[1px]"
 	>
-		<a href="shop">Buy Now</a>
+		<a href="{base}/shop">Buy Now</a>
 	</button>
 </div>

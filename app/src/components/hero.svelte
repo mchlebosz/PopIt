@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { base } from '$app/paths';
 
 	const colors = [
 		{ key: 'blue', value: '#3b82f6' },
@@ -38,7 +39,8 @@
 		<button
 			class="bg-secondary px-8 py-2 w-full sm:w-1/3 lg:w-1/4 xl:w-1/5 2xl:w-1/6 my-10 mb-16 rounded drop-shadow-lg transition-all hover:drop-shadow  hover:-translate-x-[1px] hover:-translate-y-[1px]"
 		>
-			<a href="shop" class="hover:drop-shadow-[2px_2px_2px_rgba(255,255,255,0.3)]">Buy Now</a>
+			<a href="{base}/shop" class="hover:drop-shadow-[2px_2px_2px_rgba(255,255,255,0.3)]">Buy Now</a
+			>
 		</button>
 	</div>
 </div>
